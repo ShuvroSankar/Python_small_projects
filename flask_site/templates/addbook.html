@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block body %}
+<form action="/submitbook" method="post">
+  <input type="text" placeholder="book name" name="book_name" />
+  <input type="text" placeholder="author name" name="author_name" />
+  <button type="submit">Submit</button>
+</form>
+{% endblock %}

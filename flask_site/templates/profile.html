@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% block body %} {% if isActive == true %}
+<h1>The profile is for user {{username}}</h1>
+{% else %}
+<h3>The user is logged out</h3>
+{% endif %} {% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="container">
+  <div class="row">
+    {% for book in books %}
+    <div class="col-md-6">
+      <div class="card" style="width: 20rem">
+        <div class="card-body">
+          <h5 class="card-title">{{ book.title }}</h5>
+          <h7 class="card-text">
+            <ul>
+              <li>Title: {{ book.name }}</li>
+              <li>Author: {{ book.author }}</li>
+              <!-- Typo: aurthor -> author -->
+            </ul>
+          </h7>
+          <a href="#" class="btn btn-primary">Read now</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
